@@ -4,15 +4,16 @@
 using namespace std;
 
 int main(){
+    double combustivel, consumo;
+    int km;
 
-  double raio, volume;
-  double pi = 3.14159;
+    cin >> km;
+    cin >> combustivel fixed >> setprecision (2);
 
-  cin >> raio;
+    consumo = km / combustivel;
 
-  volume = ( 4.0/3 ) * pi * ( raio * raio *raio );
-  
-  cout << "VOLUME = "<< fixed << setprecision(3) << volume << endl;
-  
-  return 0;
+    cout << combustivel << endl;
+    cout << fixed << setprecision (3) << consumo  << " km/l" << endl;
+
+    return 0;
 }
