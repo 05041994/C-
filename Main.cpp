@@ -1,19 +1,20 @@
 #include <iostream>
+#include <cmath>
 #include <iomanip>
 
 using namespace std;
 
 int main(){
-    double combustivel, consumo;
-    int km;
 
-    cin >> km;
-    cin >> combustivel fixed >> setprecision (2);
+    double X1, Y1, X2, Y2, calc;
 
-    consumo = km / combustivel;
+    cin >> X1 >> Y1;
+    cin >> X2 >> Y2;
 
-    cout << combustivel << endl;
-    cout << fixed << setprecision (3) << consumo  << " km/l" << endl;
+    calc = sqrt(pow(X2 - X1, 2) + pow(Y2 - Y1, 2));
+
+    cout << fixed << setprecision(4);
+    cout << calc;
 
     return 0;
 }
